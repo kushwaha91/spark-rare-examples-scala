@@ -1,0 +1,19 @@
+[
+  {
+    "type": "record",
+    "name": "leaf",
+    "fields": [
+      {"name": "id", "type": "int"},
+      {"name": "title","type": "string"}
+    ]
+  },
+  {
+    "type": "record",
+    "name": "root",
+    "fields": [
+      {"name": "id", "type": "int"},
+      {"name": "title","type": "string"},
+      {"name": "elements","type": {"type": "array", "items": ["root","leaf"]}}
+    ]
+  }
+]
