@@ -26,7 +26,7 @@ object ReadRecursiveData {
     val dataDS = readJsonDataToDS("/recursive_data.json")
     dataDS.show(100,false)
 
-    val dataDF = readJsonDataToDS("/recursive_data.json")
+    val dataDF = readJsonDataToDF("/recursive_data.json")
     dataDF.show(100,false)
 
 
