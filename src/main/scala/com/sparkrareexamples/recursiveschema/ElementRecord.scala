@@ -1,4 +1,4 @@
-package com.sparkrareexamples
+package com.sparkrareexamples.recursiveschema
 
 import org.apache.spark.sql.types.{BinaryType, DataType, UserDefinedType}
 

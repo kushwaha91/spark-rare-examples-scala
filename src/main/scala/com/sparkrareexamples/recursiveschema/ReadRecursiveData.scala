@@ -1,4 +1,4 @@
-package com.sparkrareexamples
+package com.sparkrareexamples.recursiveschema
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.UDTRegistration
@@ -20,20 +20,13 @@ object ReadRecursiveData {
     spark.createDataFrame(parse(scala.io.Source.fromURL(getClass.getResource(source)).mkString).extract[Seq[ElementNode]])
   }
 
-
   def main(args: Array[String]): Unit = {
 
     val dataDS = readJsonDataToDS("/recursive_data.json")
     dataDS.show(100,false)
+    dataDS.printSchema
 
     val dataDF = readJsonDataToDF("/recursive_data.json")
     dataDF.show(100,false)
-
-
-
-
-
-
   }
-
 }

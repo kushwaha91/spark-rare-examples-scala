@@ -1,4 +1,4 @@
-package com.sparkrareexamples
+package com.sparkrareexamples.recursiveschema
 
 sealed trait Element {
   def id : Int

@@ -15,4 +15,16 @@
 * RDD implementation is not included as it does not require UDT implementation. We can simply generate `Row[ElementClass]`
 
 
+2. ### **Spark Execution Metrics**
+* Access default sets of executions metrics
+  * Number of files written
+  * Number of rows written
+  * Number of partitions written
+  * Volume of data written in Bytes
+  * Duration of executions
+* Few actions might not have all the metrics produced. Depends on the type of action.
+* Helper functions are wrapped around the actions to get the metrics collected in time.
+* Case class `Metrics` is defined to store it.
+* Sql eager evaluation and actions like write/show are handled differently.
+
 ###THANK YOU####
