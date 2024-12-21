@@ -27,4 +27,6 @@
 * Case class `Metrics` is defined to store it.
 * Sql eager evaluation and actions like write/show are handled differently.
 
+Docs hosted under : https://kushwaha91.github.io/spark-rare-examples-scala/
+
 ###THANK YOU####
